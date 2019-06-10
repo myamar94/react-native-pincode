@@ -551,6 +551,11 @@ class PinCode extends React.PureComponent<IProps, IState> {
             ? this.props.styleContainer
             : styles.container
         }>
+        <View style={styles.flexCirclePassword}>
+          {this.props.passwordComponent
+            ? this.props.passwordComponent()
+            : this.renderCirclePassword()}
+        </View>
         <Animate
           show={true}
           start={{
@@ -628,11 +633,7 @@ class PinCode extends React.PureComponent<IProps, IState> {
             </View>
           )}
         </Animate>
-        <View style={styles.flexCirclePassword}>
-          {this.props.passwordComponent
-            ? this.props.passwordComponent()
-            : this.renderCirclePassword()}
-        </View>
+        
         <Grid style={styles.grid}>
           <Row
             style={
