@@ -216,6 +216,7 @@ class PINCode extends React.PureComponent<IProps, IState> {
             buttonNumberComponent={this.props.buttonNumberComponent}
             colorCircleButtons={this.props.colorCircleButtons}
             colorPassword={this.props.colorPassword}
+            logoComponent={this.props.logoComponent}
             colorPasswordEmpty={this.props.colorPasswordEmpty}
             colorPasswordError={this.props.colorPasswordError}
             emptyColumnComponent={this.props.bottomLeftComponent}
@@ -296,6 +297,7 @@ class PINCode extends React.PureComponent<IProps, IState> {
             colorPassword={this.props.colorPassword}
             colorPasswordEmpty={this.props.colorPasswordEmpty}
             colorPasswordError={this.props.colorPasswordError}
+            logoComponent={this.props.logoComponent}
             disableLockScreen={
               this.props.disableLockScreen || disableLockScreenDefault
             }
