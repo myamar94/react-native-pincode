@@ -1,30 +1,54 @@
 {
-  "name": "@haskkor/react-native-pincode",
-  "version": "1.20.3",
-  "description": "React native PIN code component",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "dev": "yarn build -watch",
-    "build": "tsc",
-    "compile": "npm run build",
-    "addlocal": "yarn add file:./local_modules/react-native-pincode",
-    "test": "jest",
-    "pretty": "prettier --single-quote --no-semi --jsx-bracket-same-line --write \"src/**/*.{ts, tsx}\""
+  "_from": "git+https://git@github.com/myamar94/react-native-pincode.git",
+  "_id": "@haskkor/react-native-pincode@1.20.3",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@haskkor/react-native-pincode",
+  "_phantomChildren": {
+    "@babel/runtime": "7.4.5",
+    "d3-interpolate": "1.3.2",
+    "d3-timer": "1.0.9",
+    "lodash": "4.17.11",
+    "prop-types": "15.7.2",
+    "react-lifecycles-compat": "3.0.4",
+    "yargs": "8.0.2"
   },
-  "jest": {
-    "preset": "react-native"
-  },
-  "repository": {
+  "_requested": {
     "type": "git",
-    "url": "git+https://github.com/Haskkor/react-native-pincode.git"
+    "raw": "@haskkor/react-native-pincode@git+https://git@github.com/myamar94/react-native-pincode.git",
+    "name": "@haskkor/react-native-pincode",
+    "escapedName": "@haskkor%2freact-native-pincode",
+    "scope": "@haskkor",
+    "rawSpec": "git+https://git@github.com/myamar94/react-native-pincode.git",
+    "saveSpec": "git+https://git@github.com/myamar94/react-native-pincode.git",
+    "fetchSpec": "https://git@github.com/myamar94/react-native-pincode.git",
+    "gitCommittish": null
   },
-  "author": "Jeremy Farnault",
-  "license": "MIT",
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://git@github.com/myamar94/react-native-pincode.git#95c67342654d9e1e689e6478bce95c0e3562a9f5",
+  "_spec": "@haskkor/react-native-pincode@git+https://git@github.com/myamar94/react-native-pincode.git",
+  "_where": "/Users/amardeep/Desktop/Project/pincodePOC",
+  "author": {
+    "name": "Jeremy Farnault"
+  },
   "bugs": {
     "url": "https://github.com/Haskkor/react-native-pincode/issues"
   },
-  "homepage": "https://github.com/Haskkor/react-native-pincode#readme",
+  "bundleDependencies": false,
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.2.2",
+    "d3-ease": "^1.0.3",
+    "lodash": "^4.17.5",
+    "react-move": "^2.7.0",
+    "react-native-easy-grid": "^0.2.0",
+    "react-native-keychain": "3.0.0",
+    "react-native-touch-id": "^4.4.1",
+    "react-native-vector-icons": "^4.5.0"
+  },
+  "deprecated": false,
+  "description": "React native PIN code component",
   "devDependencies": {
     "@types/d3-ease": "^1.0.7",
     "@types/lodash": "^4.14.104",
@@ -44,18 +68,28 @@
     "react-test-renderer": "^16.4.1",
     "typescript": "^2.7.2"
   },
-  "dependencies": {
-    "@react-native-community/async-storage": "^1.2.2",
-    "d3-ease": "^1.0.3",
-    "lodash": "^4.17.5",
-    "react-move": "^2.7.0",
-    "react-native-easy-grid": "^0.2.0",
-    "react-native-keychain": "3.0.0",
-    "react-native-touch-id": "^4.4.1",
-    "react-native-vector-icons": "^4.5.0"
+  "homepage": "https://github.com/Haskkor/react-native-pincode#readme",
+  "jest": {
+    "preset": "react-native"
   },
+  "license": "MIT",
+  "main": "index.tsx",
+  "name": "@haskkor/react-native-pincode",
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haskkor/react-native-pincode.git"
+  },
+  "scripts": {
+    "addlocal": "yarn add file:./local_modules/react-native-pincode",
+    "build": "tsc",
+    "compile": "npm run build",
+    "dev": "yarn build -watch",
+    "pretty": "prettier --single-quote --no-semi --jsx-bracket-same-line --write \"src/**/*.{ts, tsx}\"",
+    "test": "jest"
+  },
+  "version": "1.20.3"
 }
