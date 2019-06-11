@@ -326,6 +326,9 @@ class PinCode extends React.PureComponent {
         return (React.createElement(react_native_1.View, { style: this.props.styleContainer
                 ? this.props.styleContainer
                 : styles.container },
+            React.createElement(react_native_1.View, { style: styles.flexCirclePassword }, this.props.passwordComponent
+                ? this.props.passwordComponent()
+                : this.renderCirclePassword()),
             React.createElement(Animate_1.default, { show: true, start: {
                     opacity: 0,
                     colorTitle: this.props.styleColorTitle
@@ -383,9 +386,6 @@ class PinCode extends React.PureComponent {
                 this.props.subtitleComponent
                     ? this.props.subtitleComponent()
                     : this.renderSubtitle(colorSubtitle, opacityTitle, attemptFailed, showError)))),
-            React.createElement(react_native_1.View, { style: styles.flexCirclePassword }, this.props.passwordComponent
-                ? this.props.passwordComponent()
-                : this.renderCirclePassword()),
             React.createElement(react_native_easy_grid_1.Grid, { style: styles.grid },
                 React.createElement(react_native_easy_grid_1.Row, { style: this.props.styleRowButtons
                         ? this.props.styleRowButtons
@@ -529,6 +529,7 @@ let styles = react_native_1.StyleSheet.create({
         marginTop: 5
     },
     grid: {
+        backgroundColor: 'blue',
         width: '100%',
         flex: 7
     }

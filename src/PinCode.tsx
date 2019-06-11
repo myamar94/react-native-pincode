@@ -858,6 +858,7 @@ let styles = StyleSheet.create({
     marginTop: 5
   },
   grid: {
+    backgroundColor: 'blue',
     width: '100%',
     flex: 7
   }
