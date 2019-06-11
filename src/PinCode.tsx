@@ -464,10 +464,9 @@ class PinCode extends React.PureComponent<IProps, IState> {
     return (
       <Text
         style={[
+          styles.textTitle,
+          { color: colorTitle, opacity: opacityTitle },
           this.props.styleTextTitle
-            ? this.props.styleTextTitle
-            : styles.textTitle,
-          { color: colorTitle, opacity: opacityTitle }
         ]}
       >
         {(attemptFailed && this.props.titleAttemptFailed) ||
