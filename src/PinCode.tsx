@@ -18,10 +18,9 @@ import {
   ViewStyle,
   SafeAreaView
 } from "react-native";
-import { Col, Row, Grid } from "react-native-easy-grid";
 import Icon from "react-native-vector-icons/Ionicons";
 
-const { width, height } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 const BUTTON_WIDTH = (width - 30) / 3;
 
@@ -465,9 +464,10 @@ class PinCode extends React.PureComponent<IProps, IState> {
     return (
       <Text
         style={[
-          styles.textTitle,
-          { color: colorTitle, opacity: opacityTitle },
           this.props.styleTextTitle
+            ? this.props.styleTextTitle
+            : styles.textTitle,
+          { color: colorTitle, opacity: opacityTitle }
         ]}
       >
         {(attemptFailed && this.props.titleAttemptFailed) ||
@@ -549,6 +549,7 @@ class PinCode extends React.PureComponent<IProps, IState> {
           <View
             style={[styles.flexCirclePassword, { justifyContent: "flex-end" }]}
           >
+            {this.props.logoComponent && this.props.logoComponent()}
             {this.props.passwordComponent
               ? this.props.passwordComponent()
               : this.renderCirclePassword()}
